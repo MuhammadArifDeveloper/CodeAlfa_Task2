@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="gallery-container">
+    <div class="image-preview">
+      <img id="main-image" src="pic/WhatsApp Image 2024-10-11 at 10.45.20_93670acd.jpg"alt="Main Image">
+      <button class="prev-btn" onclick="changeImage(-1)">&#10094;</button>
+      <button class="next-btn" onclick="changeImage(1)">&#10095;</button>
+    </div>
+
+    <div class="thumbnail-container">
+      <img class="thumbnail" src="pic/ninja H2R.jpg" alt="Thumbnail 1" onclick="changeMainImage(0)">
+      <img class="thumbnail" src="pic/bmw_s1000rr.jpg" alt="Thumbnail 2" onclick="changeMainImage(1)">
+      <img class="thumbnail" src="pic/jaguar car.jpg" alt="Thumbnail 3" onclick="changeMainImage(2)">
+      <img class="thumbnail" src="pic/land cruiser.jpg" alt="Thumbnail 4" onclick="changeMainImage(3)">
+      <img class="thumbnail" src="pic/Mercedes G-Class facelift 2024-15.webp" alt="Thumbnail 5" onclick="changeMainImage(4)">
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
